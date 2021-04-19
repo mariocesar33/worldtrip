@@ -21,7 +21,7 @@ export function Banner() {
         alignItems="center"
         justifyContent="space-between"
       >
-        <Box marginLeft="4">
+        <Box marginX="6">
           <Heading color="gray.100" fontWeight="500" fontSize={["xl", "2xl", "4xl"]}>
             5 Continentes,<br/>infinitas possibilidades.
           </Heading>
@@ -38,7 +38,6 @@ export function Banner() {
           <Image 
             src="/images/Airplane.svg" 
             alt="yellow-plane"
-            width={[]}
             transform="translateY(48px)" 
             marginLeft="8"
           />

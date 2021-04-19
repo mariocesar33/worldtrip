@@ -1,6 +1,7 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, HStack } from "@chakra-ui/react";
 import { Banner } from "../components/Banner";
 import { Header } from "../components/Header";
+import { NavigationBar } from "../components/NavigationBar";
 
 export default function Home() {
   return (
@@ -8,6 +9,8 @@ export default function Home() {
       <Header />
 
       <Banner />
+
+      <NavigationBar />
     </Flex>
   )
 }
