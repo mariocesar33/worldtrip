@@ -13,10 +13,21 @@ export function NavLink({ children, src, href, ...rest }: NavLinkProps) {
   });
   return (
     <ChakraLink  {...rest}>
-      <Flex direction={["row", "column"]} alignItems="center" justifyContent="center">
+      <Flex 
+        direction={["row", "column"]} 
+        alignItems="center" 
+        justifyContent="center"
+      >
         { isWideVersion ? <Img src={src} /> : <Text color="yellow.400" fontSize="4xl" marginRight="2">•</Text> }
         
-        <Text marginTop="7" fontWeight="600" color="gray.700" fontSize={["md", "xl", "2xl"]}>{children}</Text>
+        <Text 
+          marginTop="7" 
+          fontWeight="600" 
+          color="gray.700" 
+          fontSize={["md", "xl", "2xl"]}
+        >
+          {children}
+        </Text>
       </Flex>
     </ChakraLink>
   )

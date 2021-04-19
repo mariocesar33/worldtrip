@@ -1,5 +1,6 @@
 import { Flex, HStack } from "@chakra-ui/react";
 import { Banner } from "../components/Banner";
+import Divider from "../components/Dividir";
 import { Header } from "../components/Header";
 import { NavigationBar } from "../components/NavigationBar";
 
@@ -11,6 +12,8 @@ export default function Home() {
       <Banner />
 
       <NavigationBar />
+
+      <Divider />
     </Flex>
   )
 }
