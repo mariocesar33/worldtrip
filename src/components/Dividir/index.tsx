@@ -1,17 +1,13 @@
-import React from 'react';
-import { Divider as ChakraDivider, Grid } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 
-const Divider: React.FC = () => {
+export function Divider()  {
   return (
-    <Grid
-      gridTemplateColumns="1fr 1fr"
-      columnGap={12}
-      opacity={0.4}
-    >
-      <ChakraDivider marginY={6} />
-      <ChakraDivider marginY={6} />
-    </Grid>
+    <Box
+      background="gray.700"
+      width={["16", "24"]}
+      height="1"
+      marginX="auto"
+      marginY={["9", "20"]}
+    /> 
   );
 }
-
-export default Divider;

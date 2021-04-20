@@ -14,7 +14,7 @@ export function NavLink({ children, src, href, ...rest }: NavLinkProps) {
   return (
     <ChakraLink  {...rest}>
       <Flex 
-        direction={["row", "column"]} 
+        direction={["row", "row", "column"]} 
         alignItems="center" 
         justifyContent="center"
       >
