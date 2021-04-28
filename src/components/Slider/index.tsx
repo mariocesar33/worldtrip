@@ -61,7 +61,7 @@ export function Slider() {
             height="100%"
             alignItems="center"
             justifyContent="center"
-            backgroundImage="url(/images/ContinentEuropa.png)"
+            backgroundImage="url(/images/ContinentAfrica.jpg)"
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             textAlign="center"
@@ -73,7 +73,7 @@ export function Slider() {
                   color="gray.100"
                   fontWeight="bold"
                 >
-                  Eurpa
+                  Africa
                 </Heading>
                 <Text
                   fontWeight="bold"
@@ -81,7 +81,7 @@ export function Slider() {
                   fontSize={["0.8rem", "1xl", "2xl"]}
                   marginTop={["2", "4"]}
                 >
-                  O continente mais antigo.
+                  O continente é considerado o berço da humanidade.
                 </Text>
               </a>
             </Link>

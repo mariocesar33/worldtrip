@@ -1,8 +1,13 @@
 import { Flex, Grid } from "@chakra-ui/react";
+import { useRouter } from "next/dist/client/router";
+
 import { Logo } from "./Logo";
 import { Previous } from "./Previous";
 
 export function Header() {
+  const { asPath } = useRouter();
+  const isHome = asPath === "/";
+
   return (
     <Flex
       as="header"
@@ -23,7 +28,9 @@ export function Header() {
         justifyContent="center"
         templateColumns="repeat(3, 1fr)"
       >
-        <Previous />
+
+        { isHome ? null : <Previous />}
+        
         <Logo />
       </Grid>
     </Flex>
