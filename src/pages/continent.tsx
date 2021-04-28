@@ -10,7 +10,13 @@ export default function Continent() {
       <Header />
       <ContinentBanner />
 
-      <Flex>
+      <Flex 
+        direction="column"
+        maxWidth={1440}
+        marginX="auto"
+        marginBottom="10"
+        paddingX="1rem"
+      >
         <ContinentDescription />
       </Flex>
 
