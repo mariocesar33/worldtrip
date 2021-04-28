@@ -1,4 +1,5 @@
 import { Flex, Heading } from "@chakra-ui/react";
+
 import { Banner } from "../components/Banner";
 import { Divider } from "../components/Dividir";
 import { Header } from "../components/Header";

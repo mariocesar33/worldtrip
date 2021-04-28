@@ -1,9 +1,16 @@
 import { Box, Image, Flex, Heading, Text } from "@chakra-ui/react";
 
-export function City() {
+interface CityProps {
+  country: string;
+  city: string;
+  flagImgSrc: string;
+  cityImgSrc: string;
+}
+
+export function City({ country, city, flagImgSrc, cityImgSrc }: CityProps) {
   return (
     <Box borderRadius="4px" overflow="hidden">
-      <Image src="/images/city/londres.png" height="170px" width="100%"/>
+      <Image src={cityImgSrc} height="170px" width="100%"/>
       <Flex
         padding="6"
         alignItems="center"
@@ -14,18 +21,18 @@ export function City() {
         borderTop="0"
       >
         <Flex direction="column">
-          <Heading fontSize="xl" fontWeight="500">Londres</Heading>
+          <Heading fontSize="xl" fontWeight="500">{city}</Heading>
           <Text 
             marginTop="3" 
             fontSize="md" 
             color="gray.500" 
             fontWeight="500"
           >
-            Reino Unido
+            {country}
           </Text>
         </Flex>
         <Image 
-          src="/images/flag/reinoUnido.png" 
+          src={flagImgSrc} 
           width="30px"
           height="30px"
           borderTopRadius="50%"

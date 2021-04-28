@@ -4,6 +4,7 @@ import { Header } from '../components/Header';
 import { ContinentBanner } from '../components/ContinentBanner';
 import { ContinentDescription } from '../components/ContinentDescription';
 import { Cities } from '../components/Cities';
+
 export default function Continent() {
   return (
     <Flex direction="column">
