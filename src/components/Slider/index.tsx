@@ -33,7 +33,7 @@ export function Slider() {
             backgroundSize="cover"
             textAlign="center"
           >
-            <Link href="/">
+            <Link href="/continent">
               <a>
                 <Heading 
                   fontSize={["3xl", "4xl", "5xl"]}
@@ -66,7 +66,7 @@ export function Slider() {
             backgroundSize="cover"
             textAlign="center"
           >
-            <Link href="/">
+            <Link href="/continent">
               <a>
                 <Heading 
                   fontSize={["3xl", "4xl", "5xl"]}
